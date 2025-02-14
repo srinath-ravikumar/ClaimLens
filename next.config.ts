@@ -10,9 +10,7 @@ const nextConfig: NextConfig = {
         hostname: 'i.pravatar.cc', // Allow external images from this host
       },
     ],
-  },
-  // assetPrefix: process.env.NODE_ENV === 'production' ? '/<project-name>' : '', // Adjust paths for GitLab Pages
-  // trailingSlash: true, // Ensure trailing slashes for all paths
+  }
 };
 
 export default nextConfig;
