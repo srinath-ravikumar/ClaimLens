@@ -1,7 +1,6 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import '../globals.css';
 
 export default function IntroPage() {
   const router = useRouter();
