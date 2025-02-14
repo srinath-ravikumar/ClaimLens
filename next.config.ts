@@ -11,8 +11,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/<project-name>' : '', // Adjust paths for GitLab Pages
-  trailingSlash: true, // Ensure trailing slashes for all paths
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '/<project-name>' : '', // Adjust paths for GitLab Pages
+  // trailingSlash: true, // Ensure trailing slashes for all paths
 };
 
 export default nextConfig;
