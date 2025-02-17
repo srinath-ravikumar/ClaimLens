@@ -1,21 +1,15 @@
+import React from 'react';
 import Claim from './Claim';
+import { ClaimType } from '../types';
 
-type Claim = {
-  id: number;
-  author: string;
-  authorHandle: string;
-  authorAvatar: string;
-  text: string;
-  truthfulness: string;
-  harmfulness: string;
-  persuasiveness: string;
-  explanation: string;
-};
+export default function SimulatedFeed({ claims }: { claims: ClaimType[] | undefined }) {
+  if (!claims || !Array.isArray(claims) || claims.length === 0) {
+    return <div className="text-gray-500">No claims available.</div>;
+  }
 
-export default function SimulatedFeed({ claims }: { claims: Claim[] }) {
   return (
     <div className="space-y-6">
-      {claims.map((claim) => (
+      {claims.map((claim: ClaimType) => (
         <Claim key={claim.id} claim={claim} />
       ))}
     </div>
